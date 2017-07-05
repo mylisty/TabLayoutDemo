@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.tongniu.tablayoutdemo.MainActivity">
+<!--<android.support.v7.widget.Toolbar
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</android.support.v7.widget.Toolbar>-->
+
+<!--    <com.tongniu.tablayoutdemo.CustomSwitchView
+        android:layout_width="300dp"
+        android:layout_height="60dp" />-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="5dp"
+        app:tabBackground="@drawable/tab_background"
+        app:tabSelectedTextColor="@color/colorAccent">
+    </android.support.design.widget.TabLayout>
+    <com.tongniu.tablayoutdemo.adapter.FirstViewpager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.tongniu.tablayoutdemo.adapter.FirstViewpager>
+
+</LinearLayout>
